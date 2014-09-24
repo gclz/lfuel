@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:paddingBottom="20dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp" >
+
+    <TextView
+        android:id="@+id/textViewCarName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="20dp"
+        android:text="@string/dft"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+
+    <!-- MAIN CONSUMPTION -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|bottom" >
+
+        <TextView
+            android:id="@+id/textViewCONSUMPTION"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="80dp"
+            android:text="@string/dft"
+            android:textColor="#FFFFFF"
+            android:textSize="100sp" />
+
+        <TextView
+            android:id="@+id/textViewCdesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:text="@string/unitConsumption"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+    <!--
+                 android:layout_toRightOf="@id/textViewCONSUMPTION"
+        android:layout_alignBaseline="@id/textViewCONSUMPTION"
+    -->
+    <!-- LABELS -->
+
+    <TextView
+        android:id="@+id/textViewTRdesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingTop="220dp"
+        android:text="@string/totalRefills"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" />
+    <!-- android:layout_below="@id/textViewCONSUMPTION" -->
+
+    <TextView
+        android:id="@+id/textViewKMdesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTRdesc"
+        android:paddingBottom="5dp"
+        android:text="@string/totalKm"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textViewFUELdesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewKMdesc"
+        android:paddingBottom="5dp"
+        android:text="@string/totalFuel"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textViewPRICEdesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewFUELdesc"
+        android:paddingBottom="5dp"
+        android:text="@string/totalPrice"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textViewAvgPdesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewPRICEdesc"
+        android:paddingBottom="5dp"
+        android:text="@string/AvgPrice"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textViewTripConsumptiondesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewAvgPdesc"
+        android:paddingBottom="5dp"
+        android:text="@string/tripConsumption"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" />
+
+    <!-- TRIP CONSUMPTION -->
+
+    <TextView
+        android:id="@+id/textViewTripConsumptionunit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/textViewTripConsumptiondesc"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/textViewAvgPdesc"
+        android:paddingLeft="10dp"
+        android:text="@string/unitConsumption"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textViewTripConsumption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/textViewTripConsumptiondesc"
+        android:layout_below="@id/textViewAvgPdesc"
+        android:layout_toLeftOf="@id/textViewTripConsumptionunit"
+        android:text="@string/dft"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <!-- TOTAL REFILLS -->
+
+    <TextView
+        android:id="@+id/textViewTRunit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/textViewTRdesc"
+        android:layout_alignLeft="@id/textViewTripConsumptionunit"
+        android:paddingLeft="10dp"
+        android:text="@string/unitRefill"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" />
+    <!-- android:layout_below="@id/textViewCdesc" -->
+
+    <TextView
+        android:id="@+id/textViewTR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/textViewTRdesc"
+        android:layout_alignRight="@id/textViewTripConsumption"
+        android:text="@string/dft"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+    <!-- android:layout_below="@id/textViewCdesc" -->
+    <!-- KM -->
+
+    <TextView
+        android:id="@+id/textViewTKMunit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/textViewKMdesc"
+        android:layout_alignLeft="@id/textViewTripConsumptionunit"
+        android:layout_below="@id/textViewTRdesc"
+        android:paddingLeft="10dp"
+        android:text="@string/unitKm"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textViewKM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/textViewKMdesc"
+        android:layout_alignRight="@id/textViewTripConsumption"
+        android:layout_below="@id/textViewTRdesc"
+        android:text="@string/dft"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <!-- FUEL -->
+
+    <TextView
+        android:id="@+id/textViewFUELunit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/textViewFUELdesc"
+        android:layout_alignLeft="@id/textViewTripConsumptionunit"
+        android:layout_below="@id/textViewKMdesc"
+        android:paddingLeft="10dp"
+        android:text="@string/unitFuel"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textViewFUEL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/textViewFUELdesc"
+        android:layout_alignRight="@id/textViewTripConsumption"
+        android:layout_below="@id/textViewKMdesc"
+        android:text="@string/dft"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <!-- TOTAL PRICE -->
+
+    <TextView
+        android:id="@+id/textViewPRICEunit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/textViewPRICEdesc"
+        android:layout_alignLeft="@id/textViewTripConsumptionunit"
+        android:layout_below="@id/textViewFUELdesc"
+        android:paddingLeft="10dp"
+        android:text="@string/unitPrice"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textViewPRICE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/textViewPRICEdesc"
+        android:layout_alignRight="@id/textViewTripConsumption"
+        android:layout_below="@id/textViewFUELdesc"
+        android:text="@string/dft"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <!-- AVERAGE PRICE -->
+
+    <TextView
+        android:id="@+id/textViewAvgPunit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/textViewAvgPdesc"
+        android:layout_alignLeft="@id/textViewTripConsumptionunit"
+        android:layout_below="@id/textViewPRICEdesc"
+        android:paddingLeft="10dp"
+        android:text="@string/unitPrice"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textViewAvgP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/textViewAvgPdesc"
+        android:layout_alignRight="@id/textViewTripConsumption"
+        android:layout_below="@id/textViewPRICEdesc"
+        android:text="@string/dft"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="deleteData"
+        android:text="@string/buttonDelete"
+        style="@style/big_button_text"
+        android:background="@drawable/gl_button_red" />
+
+</RelativeLayout>

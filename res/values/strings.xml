@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- HOME -->
+    <string name="app_name">unfuel</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">Home</string>
+    <string name="title_activity_display_message">unfuel</string>
+    <string name="Km">Enter Km</string>
+    <string name="descKm">Km</string>
+    <string name="Fuel">Enter Fuel (L)</string>
+    <string name="descFuel">Fuel</string>
+    <string name="Price">Enter Price (€)</string>
+    <string name="descPrice">Price</string>
+    <string name="Submit">Submit</string>
+    <string name="Check">Check Data</string>
+    <string name="selectCar">Select Car</string>
+    <string name="addCar">Add Car</string>
+
+    <!-- ACTIVITY -->
+    <string name="totalKm">Total Km:</string>
+    <string name="totalFuel">Total Fuel:</string>
+    <string name="totalPrice">Total Price:</string>
+    <string name="totalRefills">Total Refills:</string>
+    <string name="AvgPrice">Average Price:</string>
+    <string name="tripConsumption">Trip Consumption:</string>
+    <string name="unitRefill">refills</string>
+    <string name="unitKm">Km</string>
+    <string name="unitFuel">L</string>
+    <string name="unitPrice">€</string>
+    <string name="unitConsumption">L/100Km</string>
+    <string name="buttonDelete">Delete Car</string>
+    <string name="dft">000</string>
+    <string name="title_activity_select_vehicle">SelectVehicleActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_create_new_car">CreateNewCarActivity</string>
+    
+    <!-- CREATE CAR -->
+    <string name="carName">Car Name</string>
+    <string name="createCar">Create Car</string>
+
+</resources>

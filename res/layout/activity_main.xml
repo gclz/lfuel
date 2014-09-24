@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:paddingBottom="20dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="20dp" >
+
+    <!-- TITLE -->
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="10dp"
+        android:paddingTop="50dp"
+        android:text="@string/app_name"
+        android:textColor="#FFFFFF"
+        android:textSize="70sp" />
+
+    <!-- SELECT/ADD BUTTONS -->
+
+    <Button
+        android:id="@+id/buttonSelect"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTitle"
+        android:layout_centerHorizontal="true"
+        android:background="#000000"
+        android:onClick="selectCar"
+        android:text="@string/selectCar"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/buttonAdd"
+        style="@style/small_button_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/gl_button_1"
+        android:onClick="addCar"
+        android:text="@string/addCar" />
+
+    <!-- KM -->
+
+    <TextView
+        android:id="@+id/textViewKmDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/buttonSelect"
+        android:paddingBottom="25dp"
+        android:paddingTop="40dp"
+        android:text="@string/descKm"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/Km"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/textViewKmDesc"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/textViewTitle"
+        android:background="#000000"
+        android:ems="10"
+        android:hint="@string/Km"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:paddingLeft="30sp" >
+    </EditText>
+
+    <!-- FUEL -->
+
+    <TextView
+        android:id="@+id/textViewFuelDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/textViewKmDesc"
+        android:paddingBottom="25dp"
+        android:text="@string/descFuel"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/Fuel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/textViewFuelDesc"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/textViewKmDesc"
+        android:background="#000000"
+        android:ems="10"
+        android:hint="@string/Fuel"
+        android:inputType="numberDecimal"
+        android:textColor="#FFFFFF"
+        android:paddingLeft="30sp" />
+
+    <!-- PRICE -->
+
+    <TextView
+        android:id="@+id/textViewPriceDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/textViewFuelDesc"
+        android:paddingBottom="25dp"
+        android:text="@string/descPrice"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/Price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/textViewPriceDesc"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/textViewFuelDesc"
+        android:background="#000000"
+        android:ems="10"
+        android:hint="@string/Price"
+        android:inputType="numberDecimal"
+        android:textColor="#FFFFFF"
+        android:paddingLeft="30sp"
+        />
+
+    <Button
+        android:id="@+id/buttonCheck"
+        style="@style/medium_button_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/gl_button_1"
+        android:onClick="checkData"
+        android:text="@string/Check" />
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        style="@style/medium_button_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/gl_button_1"
+        android:onClick="submitData"
+        android:text="@string/Submit" />
+
+</RelativeLayout>
