@@ -1,7 +1,7 @@
 unfuel v0.95
 ======
 
-A simple fuel log app.
+A simple fuel log app, developed for personal use.
 
 The code isn't completely clean (for example, there are prints I used to debug the code) and still needs some attention. I'll check it soon.
 The documentation is still poor.
