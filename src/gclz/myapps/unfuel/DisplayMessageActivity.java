@@ -66,8 +66,8 @@ public class DisplayMessageActivity extends Activity {
 	    TextView textViewC = (TextView)findViewById(R.id.textViewCONSUMPTION);
 	    textViewC.setText(String.valueOf(a.getOldConsumption()));
 	    
-	    TextView textViewTripConsumption = (TextView)findViewById(R.id.textViewTripConsumption);
-	    textViewTripConsumption.setText(String.valueOf(a.getTripConsumption()));
+//	    TextView textViewTripConsumption = (TextView)findViewById(R.id.textViewTripConsumption);
+//	    textViewTripConsumption.setText(String.valueOf(a.getTripConsumption()));
 	    
 	    TextView textViewCarName = (TextView)findViewById(R.id.textViewCarName);
 	    textViewCarName.setText(carName);

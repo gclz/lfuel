@@ -99,7 +99,7 @@
         android:text="@string/AvgPrice"
         android:textColor="#FFFFFF"
         android:textSize="15sp" />
-
+<!-- 
     <TextView
         android:id="@+id/textViewTripConsumptiondesc"
         android:layout_width="wrap_content"
@@ -109,9 +109,9 @@
         android:text="@string/tripConsumption"
         android:textColor="#FFFFFF"
         android:textSize="15sp" />
-
+-->
     <!-- TRIP CONSUMPTION -->
-
+<!-- 
     <TextView
         android:id="@+id/textViewTripConsumptionunit"
         android:layout_width="wrap_content"
@@ -134,7 +134,7 @@
         android:text="@string/dft"
         android:textColor="#FFFFFF"
         android:textSize="20sp" />
-
+ -->
     <!-- TOTAL REFILLS -->
 
     <TextView
@@ -142,7 +142,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@id/textViewTRdesc"
-        android:layout_alignLeft="@id/textViewTripConsumptionunit"
+        android:layout_alignParentRight="true"
         android:paddingLeft="10dp"
         android:text="@string/unitRefill"
         android:textColor="#FFFFFF"
@@ -154,7 +154,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@id/textViewTRdesc"
-        android:layout_alignRight="@id/textViewTripConsumption"
+        android:layout_toLeftOf="@id/textViewTRunit"
         android:text="@string/dft"
         android:textColor="#FFFFFF"
         android:textSize="20sp" />
@@ -166,7 +166,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@id/textViewKMdesc"
-        android:layout_alignLeft="@id/textViewTripConsumptionunit"
+        android:layout_alignLeft="@id/textViewTRunit"
         android:layout_below="@id/textViewTRdesc"
         android:paddingLeft="10dp"
         android:text="@string/unitKm"
@@ -178,7 +178,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@id/textViewKMdesc"
-        android:layout_alignRight="@id/textViewTripConsumption"
+        android:layout_alignRight="@id/textViewTR"
         android:layout_below="@id/textViewTRdesc"
         android:text="@string/dft"
         android:textColor="#FFFFFF"
@@ -191,7 +191,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@id/textViewFUELdesc"
-        android:layout_alignLeft="@id/textViewTripConsumptionunit"
+        android:layout_alignLeft="@id/textViewTRunit"
         android:layout_below="@id/textViewKMdesc"
         android:paddingLeft="10dp"
         android:text="@string/unitFuel"
@@ -203,7 +203,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@id/textViewFUELdesc"
-        android:layout_alignRight="@id/textViewTripConsumption"
+        android:layout_alignRight="@id/textViewTR"
         android:layout_below="@id/textViewKMdesc"
         android:text="@string/dft"
         android:textColor="#FFFFFF"
@@ -216,7 +216,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@id/textViewPRICEdesc"
-        android:layout_alignLeft="@id/textViewTripConsumptionunit"
+        android:layout_alignLeft="@id/textViewTRunit"
         android:layout_below="@id/textViewFUELdesc"
         android:paddingLeft="10dp"
         android:text="@string/unitPrice"
@@ -228,7 +228,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@id/textViewPRICEdesc"
-        android:layout_alignRight="@id/textViewTripConsumption"
+        android:layout_alignRight="@id/textViewTR"
         android:layout_below="@id/textViewFUELdesc"
         android:text="@string/dft"
         android:textColor="#FFFFFF"
@@ -241,7 +241,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@id/textViewAvgPdesc"
-        android:layout_alignLeft="@id/textViewTripConsumptionunit"
+        android:layout_alignLeft="@id/textViewTRunit"
         android:layout_below="@id/textViewPRICEdesc"
         android:paddingLeft="10dp"
         android:text="@string/unitPrice"
@@ -253,7 +253,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@id/textViewAvgPdesc"
-        android:layout_alignRight="@id/textViewTripConsumption"
+        android:layout_alignRight="@id/textViewTR"
         android:layout_below="@id/textViewPRICEdesc"
         android:text="@string/dft"
         android:textColor="#FFFFFF"
