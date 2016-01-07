@@ -1,4 +1,4 @@
-unfuel v0.95
+lfuel v0.95
 ======
 
 A simple fuel log app, developed for personal use.
